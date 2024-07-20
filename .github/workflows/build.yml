@@ -20,9 +20,3 @@ jobs:
         build-*/*.mbn
         build-*/lk.bin
         build-*/*
-  stock:
-    needs: lk1st
-    uses: ./.github/workflows/stock-matrix.yml
-    with:
-       artifacts: |
-         build-*/*
