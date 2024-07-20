@@ -12,7 +12,6 @@ DEBUG := 0
 else
 DEBUG := 1
 endif
-LK2ND_BUNDLE_DTB="bundle.dtb"
 EMMC_BOOT := 1
 ENABLE_SDHCI_SUPPORT := 1
 ENABLE_UFS_SUPPORT   := 1
