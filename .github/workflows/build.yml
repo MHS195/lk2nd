@@ -10,7 +10,7 @@ jobs:
       artifacts: |
         build-*/lk.bin
         build-*/lk2nd.img
-
+        build-*/*
   lk1st:
     needs: lk2nd
     uses: ./.github/workflows/lk2nd-matrix.yml
@@ -23,3 +23,6 @@ jobs:
   stock:
     needs: lk1st
     uses: ./.github/workflows/stock-matrix.yml
+    with:
+       artifacts: |
+         build-*/*
