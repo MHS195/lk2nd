@@ -1,4 +1,8 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
 /dts-v1/;
+#include <skeleton64.dtsi>
+#include <lk2nd.dtsi>
 
 / {
  model = "Qualcomm Technologies, Inc. MSM 8996";
@@ -27598,4 +27602,10 @@ qcom,itech-3000mah {
  model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
  qcom,msm-id = <433 0x10001>, <434 0x10001>, <435 0x10001>;
  qcom,board-id = <0x80 0>, <0x81 0>;
+};
+
+&lk2nd {
+	model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
+	compatible = "qcom,msm8996", "lk2nd,device", "htc,oce";
+        qcom,msm-id = <QCOM_ID_MSM8996SG 0x10001>;
 };
