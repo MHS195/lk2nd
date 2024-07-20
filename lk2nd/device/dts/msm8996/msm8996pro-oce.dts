@@ -6,7 +6,7 @@
 / {
  	model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
 	compatible = "qcom,msm8996", "htc,oce";
-	qcom,msm-id = <305 0x10000>;
+	qcom,msm-id = <305 0x0>;
 	qcom,board-id = <80 0>; <81 0>;
 	qcom,pmic-id = <0x20009 0x10013 0x0 0x0>;
 };
@@ -14,7 +14,7 @@
 &lk2nd {
 	model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
 	compatible = "qcom,msm8996", "lk2nd,device", "htc,oce";
-        qcom,msm-id = <305 0x10000>;
+        qcom,msm-id = <QCOM_ID_MSM8996SG>;
 };
 
 
