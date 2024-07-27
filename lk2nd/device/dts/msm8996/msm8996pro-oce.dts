@@ -4,16 +4,14 @@
 #include <lk2nd.dtsi>
 
 / {
- 	model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
-	compatible = "qcom,msm8996", "htc,oce";
-	qcom,msm-id = <433 0x10001>, <434 0x10001>, <435 0x10001>;
-	qcom,board-id = <0x80 0>, <0x81 0>;
-	qcom,pmic-id = <0x20009 0x10013 0x0 0x0>;
+   model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
+   qcom,msm-id = <433 0x10001>, <434 0x10001>, <435 0x10001>;
+   qcom,board-id = <0x80 0>, <0x81 0>;
 };
 
 &lk2nd {
 	model = "HTC Corporation. MSM8996pro v1.1 + PMI8996 OCE PVT";
-	compatible = "qcom,msm8996", "pmi8996", "qcom,msm8996sg";
-        qcom,msm-id = <QCOM_ID_MSM8996SG 0x10001>;
+	compatible = "qcom,msm8996", "pmi8996", "qcom,msm8996sg", "htc,oce";
+        qcom,msm-id = <QCOM_ID_MSM8996SG 0x0>;
 };
 
